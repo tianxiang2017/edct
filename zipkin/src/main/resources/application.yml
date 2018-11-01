@@ -2,7 +2,7 @@ spring:
   application:
     name: zipkin
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.ztxlearn.xyz
 
 server:
   port: 9411

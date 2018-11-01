@@ -22,7 +22,7 @@ eureka:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.ztxlearn.xyz
   boot:
     admin:
       routes:

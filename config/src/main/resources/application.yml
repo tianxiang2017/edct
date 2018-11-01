@@ -20,7 +20,7 @@ spring:
           uri: https://github.com/tianxiang2017/spring-boot-cloud
           search-paths: config-repo
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.ztxlearn.xyz
 
 security:
   user:

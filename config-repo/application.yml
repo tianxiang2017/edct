@@ -20,7 +20,7 @@ ribbon:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.ztxlearn.xyz
   sleuth:
     sampler:
       percentage: 1
