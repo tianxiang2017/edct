@@ -3,15 +3,11 @@ server:
 
 eureka:
   instance:
-    hostname: registry
-    prefer-ip-address: true
+    hostname: registry.ztxlearn.xyz
+    #prefer-ip-address: true
   client:
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://${security.user.name}:${security.user.password}@registry.ztxlearn.xyz:${server.port}/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@${eureka.instance.hostname}:${server.port}/eureka/
 
-security:
-  user:
-    name: user
-    password: ${REGISTRY_SERVER_PASSWORD:password}
