@@ -1,0 +1,30 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: account
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry.ztxlearn.xyz:8761/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+   web:
+    exposure:
+     include: bus-refresh

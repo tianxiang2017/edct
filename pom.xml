@@ -27,6 +27,8 @@
         <module>svca-service</module>
         <module>svcb-service</module>
         <module>zipkin</module>
+        <module>service-hi</module>
+        <module>account</module>
     </modules>
 
     <properties>
@@ -36,6 +38,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- spring cloud 基础依赖 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

@@ -5,9 +5,8 @@ eureka:
   instance:
     hostname: registry.ztxlearn.xyz
     #prefer-ip-address: true
-  client:
+  client: # euraka配置
     registerWithEureka: false
     fetchRegistry: false
     service-url:
       defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@${eureka.instance.hostname}:${server.port}/eureka/
-
